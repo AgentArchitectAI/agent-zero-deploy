@@ -55,3 +55,4 @@ agent_history.gif
 # Excluye archivos de configuración de editores
 .vscode/
 .idea/
+.env

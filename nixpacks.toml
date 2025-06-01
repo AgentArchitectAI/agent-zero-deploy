@@ -1,8 +1,13 @@
 [phases.setup]
-nixPkgs = ["python311", "gcc"]
+nixPkgs = ["python311", "gcc", "git"]
 
 [phases.install]
-cmds = ["python -m venv /opt/venv", ". /opt/venv/bin/activate", "pip install -r requirements.txt"]
+cmds = [
+  "python -m venv /opt/venv",
+  ". /opt/venv/bin/activate",
+  "pip install --upgrade pip",
+  "pip install -r requirements.txt"
+]
 
 [start]
 cmd = "./start.sh"

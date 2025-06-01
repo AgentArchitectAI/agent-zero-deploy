@@ -11,7 +11,7 @@
 .git/
 
 # Ignore all contents of the virtual environment directory
-.venv/
+venv/
 
 # Handle bundle directory
 bundle/*/
@@ -47,3 +47,11 @@ instruments/**
 # Global rule to include .gitkeep files anywhere
 !**/.gitkeep
 agent_history.gif
+
+# Excluye archivos de logs y bases de datos temporales
+*.log
+*.sqlite3
+
+# Excluye archivos de configuración de editores
+.vscode/
+.idea/
